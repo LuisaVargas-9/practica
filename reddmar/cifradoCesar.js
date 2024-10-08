@@ -2,7 +2,7 @@ function cifrarMensaje(mensaje, llaveCifrado) {
     // Inicializo el abecedario
     let abecedario = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
 
-    mensajeCifrado = ""
+    let mensajeCifrado = ""
     // Convierto el mensaje a mayúsculas para que coincida con abecedario
     mensaje = mensaje.toUpperCase();
 

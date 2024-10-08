@@ -1,6 +1,5 @@
-palindromo = "Anita lava la tina"
+let palindromo = "Anita lava la tina"
 let auxiliar
-
 
 if(typeof(palindromo) === "string"){
     auxiliar = "palindromo"
@@ -8,8 +7,7 @@ if(typeof(palindromo) === "string"){
     auxiliar = "capicua"
 }
 
-pattern = /[\^*@!"#$%&/()=?¡!¿'\\.,;]/
-palindromo = palindromo
+const pattern = /[\^*@!"#$%&/()=?¡!¿'\\.,;]/
 palindromo = palindromo
     .toString()
     .replace(pattern, "")
@@ -19,8 +17,7 @@ palindromo = palindromo
 let esPalindromo = true
 
 for (let i = 0; i < palindromo.length; i++) {
-    const element = palindromo[i];
-    j = palindromo.length -1-i
+    let j = palindromo.length -1-i
     if (palindromo[i] !== palindromo[j]) {
         esPalindromo = false
         break
